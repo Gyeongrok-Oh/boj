@@ -1,3 +1,6 @@
 N = int(input())
-for i in range(1,10):
+
+i = 1
+while i < 10:
     print(N,'*', i, '=', N*i)
+    i += 1
