@@ -1,3 +1,5 @@
-num = int(input())
-for i in range(1,num+1):
+n = int(input())
+i = 1
+while i < n+1:
     print(i)
+    i += 1
