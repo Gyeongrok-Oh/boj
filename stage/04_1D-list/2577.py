@@ -17,3 +17,16 @@ i = 0
 while i < len(counts):
     print(counts[i])
     i += 1
+
+
+
+
+print('---------')
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+result = list(str(a * b * c))
+for i in range(10):
+    print(result.count str[i])
