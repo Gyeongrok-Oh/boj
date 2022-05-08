@@ -1,15 +1,15 @@
 word = input()
 
-location_of_alphabet = [-1] *  26
+location_of_alphabets = [-1] *  26
 
 i = 0
 while i < len(word):
-    index = ord(word[i]) - 97
-    if location_of_alphabet[index] == -1:
-        location_of_alphabet[index] = i
+    location = ord(word[i]) - 97
+    if location_of_alphabets[location] == -1:
+        location_of_alphabets[location] = i
     i += 1
 
 i = 0
-while i < len(location_of_alphabet):
-    print(location_of_alphabet[i], end=' ')
+while i < len(location_of_alphabets):
+    print(location_of_alphabets[i], end=' ')
     i += 1
