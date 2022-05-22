@@ -9,6 +9,7 @@ counts = [0] * 10
 while True:
     digit = multiple % 10
     counts[digit] += 1
+    print(counts)
     multiple //= 10
     if multiple == 0:
         break
