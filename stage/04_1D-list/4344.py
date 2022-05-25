@@ -6,7 +6,7 @@ while _ < c:
     scores=list(map(int,input().split()))
     avg= (sum(scores)-scores[0]) /scores[0]
     _ += 1
-
+    
     for i in scores[1:]: 
         if i>avg: 
             count += 1 
