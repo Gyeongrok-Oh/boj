@@ -12,4 +12,10 @@ while _ < K:
         numbers.append(N)
 
     _ += 1
-print(sum(numbers))
+sum = 0
+i = 0
+while i < len(numbers):
+    sum += numbers[i]
+
+    i += 1
+print(sum)
