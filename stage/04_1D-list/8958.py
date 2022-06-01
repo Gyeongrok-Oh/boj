@@ -4,7 +4,7 @@ _ = 0
 while _ < n:
     sum = 0
     score = 0
-    quiz_result = input()
+    quiz_result = input()\
     i = 0
     while i < len(quiz_result):
         
