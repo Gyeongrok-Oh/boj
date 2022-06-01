@@ -6,10 +6,13 @@ while _ < c:
     scores=list(map(int,input().split()))
     avg= (sum(scores)-scores[0]) /scores[0]
     _ += 1
-    
-    for i in scores[1:]: 
-        if i>avg: 
-            count += 1 
+
+    i = 1
+    while i < len(scores):
+        if scores[i] > avg:
+            count += 1
+        i += 1
+
     result = count /scores[0]*100 
     print(f"{result:.3f}%")
 
