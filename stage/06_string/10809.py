@@ -7,6 +7,7 @@ while i < len(word):
     location = ord(word[i]) - 97
     if location_of_alphabets[location] == -1:
         location_of_alphabets[location] = i
+        print(i)
     i += 1
 
 i = 0

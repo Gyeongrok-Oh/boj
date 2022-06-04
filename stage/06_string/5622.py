@@ -1,21 +1,12 @@
-cell = input()
+cell = list(input().split())
 sum = 0
-for i in cell:
-    if i in ['A', 'B', 'C']:
+print(cell)
+i = 0
+while i < len(cell):
+    if cell[i] in ['A','B','C']:
         sum += 3
-    elif i in ['D', 'E', 'F']:
-        sum += 4
-    elif i in ['G', 'H', 'I']:
-        sum += 5
-    elif i in ['J', 'K', 'L']:
-        sum += 6
-    elif i in ['M', 'N', 'O']:
-        sum += 7
-    elif i in ['P', 'Q', 'R', 'S']:
-        sum += 8
-    elif i in ['T', 'U', 'V']:
-        sum += 9
-    elif i in ['W', 'X', 'Y', 'Z']:
-        sum += 10
+    elif cell[i] in ['D','E','F']:
+        sum += 3
+    i += 1
 print(sum)
 

@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 n = int(input())
 
 _ = 0
@@ -6,8 +16,13 @@ while _ < n:
     r = int(r)
     
     
-
-    for i in s:
-        print(r*i, end='')
-    print()
+    
+    i = 0
+    while i < len(s):
+        result = s[i]* r
+        result.replace(' ','' )
+        print(result,end=' ')
+        print()
+        i += 1
+    
     _ += 1
