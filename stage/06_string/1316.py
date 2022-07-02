@@ -1,4 +1,4 @@
-from re import L
+
 
 
 def is_group_word(word):

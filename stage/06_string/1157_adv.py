@@ -17,6 +17,7 @@ while i < 26:
     if count > max_count:
         max_count = count
         max_count_index = i
+        print(max_count_index)
         max_count_count = 1
     elif count == max_count:
         max_count_count += 1
