@@ -18,16 +18,18 @@ def is_group_word(word):
 
     return True
 
-N = int(input())
 
-group_word_count = 0
+if __name__ == "__main__":
+    N = int(input())
 
-_ = 0
-while _ < N:
-    word = input()
-    if is_group_word(word):
-        group_word_count += 1
+    group_word_count = 0
 
-    _ += 1
+    _ = 0
+    while _ < N:
+        word = input()
+        if is_group_word(word):
+            group_word_count += 1
 
-print(group_word_count)
+        _ += 1
+
+    print(group_word_count)
