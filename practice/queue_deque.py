@@ -20,3 +20,12 @@ print(queue)
 # queue peek
 print(queue[0])
 print(queue)
+
+# dif of del with pop
+queue = deque(a_list)
+del queue[0]
+print(queue)
+
+queue = deque(a_list)
+print(queue.popleft())
+print(queue)
