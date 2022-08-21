@@ -13,6 +13,7 @@ while cycle < N:
     key = numbers[cycle]
     index = cycle - 1
     while index > -1:
+        
         if numbers[index] > key:
             numbers[index + 1] = numbers[index]
         else:
@@ -20,6 +21,7 @@ while cycle < N:
         index -= 1
     numbers[index + 1] = key
     cycle += 1
+
 
 for number in numbers:
     print(number)
