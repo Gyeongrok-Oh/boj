@@ -47,6 +47,8 @@ if __name__ == "__main__":
         a, b = map(int, input().split())
         graph[a].append(b)
         graph[b].append(a)
+    for i in range(1, V + 1):
+        graph[i].sort()
 
     dfs()
     bfs()
