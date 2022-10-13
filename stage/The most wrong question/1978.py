@@ -1,20 +1,21 @@
-def is_demical(N):
+def is_demical():
 
     i = 0
     while i > N:
 
         if demicals[i] == 1:
-            return True
+            return False
 
         j = 2
-        while j > 10:
-
+        while j > demicals[i] + 1:
+            
             if demicals[i] == j:
-                continue
+                return True
+            
             elif demicals[i] % j == 0:
                 return False
-
-            return True
+            
+            
             j += 1
         i += 1
 
@@ -25,7 +26,7 @@ demicals = list(map(int, input().split()))
 cnt = 0
 
 for _ in range(N):
-    if is_demical(N):
+    if is_demical():
         cnt += 1
 
 print(cnt)
